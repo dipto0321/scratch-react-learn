@@ -1,0 +1,19 @@
+.box{
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+}
+.box-small{
+  width: 100px;
+  height: 100px;
+}
+
+.box-medium {
+  width: 150px;
+  height: 150px;
+}
+
+.box-large {
+  width: 250px;
+  height: 250px;
+}
