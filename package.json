@@ -4,8 +4,7 @@
   "description": "A simple repo for basic react practice",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    
   },
   "repository": {
     "type": "git",
