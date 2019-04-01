@@ -1,0 +1,24 @@
+{
+  "name": "scratch-react-learn",
+  "version": "1.0.0",
+  "description": "A simple repo for basic react practice",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipto0321/scratch-react-learn.git"
+  },
+  "author": "Dipto Karmakar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dipto0321/scratch-react-learn/issues"
+  },
+  "homepage": "https://github.com/dipto0321/scratch-react-learn#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
