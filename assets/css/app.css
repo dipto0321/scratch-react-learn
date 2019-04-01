@@ -17,3 +17,10 @@
   width: 250px;
   height: 250px;
 }
+
+.big-btn{
+  width: 20vw;
+  height: 20vh;
+  padding: 20px;
+  font-size: 5em;
+}
