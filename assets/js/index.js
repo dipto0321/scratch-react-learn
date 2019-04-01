@@ -1,15 +1,34 @@
 const app = document.getElementById("app");
 
-function Box({className, style, ...rest}) {
-  return <div className={`box ${className}`} style={{padding: 20, ...style}} {...rest}/>
+const state = { eventCount: 0, username: '' };
+
+function App() {
+  return (
+    <div>
+      <p>There have been {state.eventCount} events</p>
+      <div><button onClick={increment}>HIT!</button></div>
+      <p>You typed: {state.username}</p>
+      <p><input onChange={updateUsername} /></p>
+    </div>
+  );
 }
 
-const boxElement = (
-  <div>
-    <Box className='box-small' style={{ backgroundColor: 'lightblue' }}>Small Box</Box>
-    <Box className='box-medium' style={{ backgroundColor: 'orange' }}>Medium Box</Box>
-    <Box className='box-large' style={{backgroundColor: 'pink'}}>Large Box</Box>
-  </div>
-);
 
-ReactDOM.render(boxElement, app);
+
+function renderApp() {
+  ReactDOM.render(<App/>, app);
+}
+
+function setState(newState) {
+  Object.assign(state, newState);
+  renderApp();
+}
+
+function increment() {
+  setState({eventCount: state.eventCount + 1});
+}
+
+function updateUsername(event) {
+  setState({username: event.target.value});
+}
+renderApp();
