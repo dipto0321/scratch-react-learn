@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/dipto0321/scratch-react-learn#readme",
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "parcel-bundler": "^1.12.3"
+    "@babel/core": "^7.4.0"
   }
 }
